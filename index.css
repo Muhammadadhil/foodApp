@@ -112,3 +112,9 @@ body{
     overflow: hidden;
     text-align: center;
 }
+
+.filter-top{
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+}

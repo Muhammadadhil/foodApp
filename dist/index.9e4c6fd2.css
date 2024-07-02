@@ -101,4 +101,10 @@ body {
   height: 410px;
   overflow: hidden;
 }
+
+.filter-top {
+  gap: 50px;
+  padding-bottom: 20px;
+  display: flex;
+}
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
