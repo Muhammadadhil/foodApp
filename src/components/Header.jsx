@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {LOGO_URL} from "../../utils/constants"
 import { useEffect, useState } from "react";
 
@@ -18,9 +19,9 @@ const Header = () => {
                 <img alt="app-logo" className="logo-image" src={LOGO_URL}></img>
             </div>
             <div className="nav-items">
-                <a>home</a>
-                <a>about</a>
-                <a>contact</a>
+                <Link to="/">Home</Link>
+                <Link to="/about">about</Link>
+                <Link to='/Contact' >contact</Link>
                 <a>restuarant</a>
                 <button className="login-button" onClick={()=>{
                     logButton=="login"?setLogButton("logout"):setLogButton("login");

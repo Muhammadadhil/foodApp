@@ -1,7 +1,8 @@
-import RestuarantCards from "./RestuarantCards"
+import RestuarantCards from "./RestaurantCards"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Shimmer from "./shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
 
@@ -66,7 +67,11 @@ const Body = () => {
 
             <div className="restaurant-container">
                 {filteredReslist.map((restaurant) => {
-                    return <RestuarantCards key={restaurant.info.id} restData={restaurant} />;
+                    return (
+                        <Link to={"/restaurant/"+restaurant.info.id} key={restaurant.info.id}>
+                            <RestuarantCards restData={restaurant} />
+                        </Link>
+                    );
                 })}
             </div>
         </div>
